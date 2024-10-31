@@ -70,7 +70,10 @@ tidy_gender_EQ5D_noNA <- gender_EQ5D_noNA %>%
                 values_to = 'EQ5D'
                 ) 
 
-tidy_gender_EQ5D_noNA$Gender <- factor(tidy_gender_EQ5D_noNA$Gender, levels = c(1, 2), labels = c("Male", "Female"))
+tidy_gender_EQ5D_noNA$Gender <- factor(tidy_gender_EQ5D_noNA$Gender, 
+                                       levels = c(1, 2), 
+                                       labels = c("Male", "Female")
+                                       )
 
 head(tidy_gender_EQ5D_noNA)
 ```
