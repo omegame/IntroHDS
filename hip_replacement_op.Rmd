@@ -81,7 +81,6 @@ head(tidy_age_EQ5D_noNA)
 ## Plot quality of life pre and operation for each age group
 
 ```{r plot-eq5d}
-
 tidy_age_EQ5D_noNA$Time <- factor(tidy_age_EQ5D_noNA$Time,levels=c('Pre','Post')) 
 
 tidy_age_EQ5D_noNA %>% 
